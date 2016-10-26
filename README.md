@@ -1,13 +1,17 @@
 # lineprotocol
 
-Export data to InfluxDB’s Line Protocol format based on specified input data structure (columns names) and desired output (measurement, fields, tags, timestamp).
+Export data to InfluxDB's Line Protocol format based on specified input data structure (columns names) and desired output (measurement, fields, tags, timestamp).
 
 Any data going through the exporter is sanitized according to Influx's recommendations:
 https://docs.influxdata.com/influxdb/v1.0/write_protocols/line_protocol_tutorial/#data-types
 https://docs.influxdata.com/influxdb/v1.0/write_protocols/line_protocol_tutorial/#special-characters-and-keywords
 
-InfluxDB’s Line Protocol documentation can be found here:
+InfluxDB's Line Protocol documentation can be found here:
 https://docs.influxdata.com/influxdb/v1.0/write_protocols/
+
+## Installation
+
+    $ pip install lineprotocol
 
 
 ## Usage
@@ -39,3 +43,8 @@ https://docs.influxdata.com/influxdb/v1.0/write_protocols/
     # example,some_letter=x id=1i,name="foo",percentage=50.2,status=True 1465839830100400200
     # example,some_letter=y id=2i,name="bar",percentage=17.0,status=True 1465839830100400200
     # example,some_letter=z id=3i,name="baz",percentage=100,status=False 1465839830100400200
+
+
+## Running tests
+
+    $ python -m unittest tests.smoke_test
