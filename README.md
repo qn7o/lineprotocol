@@ -48,3 +48,8 @@ https://docs.influxdata.com/influxdb/v1.0/write_protocols/
 ## Running tests
 
     $ python -m unittest tests.smoke_test
+
+Or use [nose](http://nose.readthedocs.io/):
+
+    $ cd path/to/project
+    $ nosetests
