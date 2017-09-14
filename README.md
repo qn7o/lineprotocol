@@ -3,11 +3,11 @@
 Export data to InfluxDB's Line Protocol format based on specified input data structure (columns names) and desired output (measurement, fields, tags, timestamp).
 
 Any data going through the exporter is sanitized according to Influx's recommendations:
-https://docs.influxdata.com/influxdb/v1.0/write_protocols/line_protocol_tutorial/#data-types
-https://docs.influxdata.com/influxdb/v1.0/write_protocols/line_protocol_tutorial/#special-characters-and-keywords
+https://docs.influxdata.com/influxdb/v1.3/write_protocols/line_protocol_tutorial/#data-types
+https://docs.influxdata.com/influxdb/v1.3/write_protocols/line_protocol_tutorial/#special-characters-and-keywords
 
 InfluxDB's Line Protocol documentation can be found here:
-https://docs.influxdata.com/influxdb/v1.0/write_protocols/
+https://docs.influxdata.com/influxdb/v1.3/write_protocols/line_protocol_reference/
 
 ## Installation
 
