@@ -28,7 +28,7 @@ https://docs.influxdata.com/influxdb/v1.0/write_protocols/
 
     exporter = LineProtocolExporter(
         labels=['id', 'name', 'some_letter', 'some_number', 'percentage', 'status'],
-        measurement='example',
+        measurement='sample_metric',
         tag_columns=['some_letter'],
         field_columns=['id', 'name', 'percentage', 'status'],
         field_types=['int', 'str', 'float', 'bool'],
@@ -40,9 +40,9 @@ https://docs.influxdata.com/influxdb/v1.0/write_protocols/
 
 
     # Output:
-    # example,some_letter=x id=1i,name="foo",percentage=50.2,status=True 1465839830100400200
-    # example,some_letter=y id=2i,name="bar",percentage=17.0,status=True 1465839830100400200
-    # example,some_letter=z id=3i,name="baz",percentage=100,status=False 1465839830100400200
+    # sample_metric,some_letter=x id=1i,name="foo",percentage=50.2,status=True 1465839830100400200
+    # sample_metric,some_letter=y id=2i,name="bar",percentage=17.0,status=True 1465839830100400200
+    # sample_metric,some_letter=z id=3i,name="baz",percentage=100,status=False 1465839830100400200
 
 
 ## Running tests
